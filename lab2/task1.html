@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб 2 - Завдання 1: Створення точок кліком миші</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Головна</a>
+        <div class="dropdown">
+            <button class="dropbtn">Лаб 1 ▼</button>
+            <div class="dropdown-content">
+                <a href="../lab1/task1_2.html">Завдання 1 та 2</a>
+                <a href="../lab1/task3.html">Завдання 3</a>
+                <a href="../lab1/task4.html">Завдання 4</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn active-lab">Лаб 2 ▼</button>
+            <div class="dropdown-content">
+                <a href="task1.html" class="active-task">Завдання 1 (Точки)</a>
+                <a href="task2.html">Завдання 2 (Кольори та очищення)</a>
+                <a href="task3.html">Завдання 3 (Трикутники)</a>
+                <a href="task4.html">Завдання 4 (Кола / Повна програма)</a>
+            </div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Лаб 3 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+        <div class="dropdown"><button class="dropbtn">Лаб 4 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+        <div class="dropdown"><button class="dropbtn">Лаб 5 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+        <div class="dropdown"><button class="dropbtn">Лаб 6 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+        <div class="dropdown"><button class="dropbtn">Лаб 7 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+        <div class="dropdown"><button class="dropbtn">Лаб 8 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+    </nav>
+
+    <div class="container">
+        <h2>Завдання 1: Створення точок за натисканням на мишу</h2>
+        <p>Клікніть по Canvas у будь-якому місці. Позиція курсора коригується за допомогою методу <code>event.target.getBoundingClientRect()</code>.</p>
+        
+        <div class="info-badge" id="infoBadge">Кількість точок: 0</div>
+        <br>
+        <canvas id="glcanvas" class="drawing-canvas" width="500" height="500"></canvas>
+    </div>
+
+    <script src="js/task1.js"></script>
+</body>
+</html>
+

@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -140,4 +140,96 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+/* Controls Panel for Lab 2 */
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 12px 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.toolbar-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toolbar-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #34495e;
+    color: #ecf0f1;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2c3e50;
+    transform: translateY(-1px);
+}
+
+.btn-active {
+    background-color: #1abc9c !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 2px #16a085;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.color-input {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    cursor: pointer;
+    background: none;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 2px;
+}
+
+.color-input::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+}
+
+.info-badge {
+    display: inline-block;
+    background-color: #e8f4fd;
+    color: #2980b9;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.drawing-canvas {
+    cursor: crosshair;
 }

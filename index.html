@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,15 @@
                 <a href="lab1/task4.html">Завдання 4</a>
             </div>
         </div>
-        <div class="dropdown"><button class="dropbtn">Лаб 2 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
+        <div class="dropdown">
+            <button class="dropbtn">Лаб 2 ▼</button>
+            <div class="dropdown-content">
+                <a href="lab2/task1.html">Завдання 1 (Точки)</a>
+                <a href="lab2/task2.html">Завдання 2 (Кольори та очищення)</a>
+                <a href="lab2/task3.html">Завдання 3 (Трикутники)</a>
+                <a href="lab2/task4.html">Завдання 4 (Кола / Повна програма)</a>
+            </div>
+        </div>
         <div class="dropdown"><button class="dropbtn">Лаб 3 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
         <div class="dropdown"><button class="dropbtn">Лаб 4 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
         <div class="dropdown"><button class="dropbtn">Лаб 5 ▼</button><div class="dropdown-content"><a href="#">В процесі...</a></div></div>
@@ -38,6 +46,17 @@
             <li><strong>Завдання 1 та 2:</strong> Ініціалізація WebGL, налаштування Viewport та рендеринг кольорового трикутника з градієнтною інтерполяцією кольору вершин.</li>
             <li><strong>Завдання 3:</strong> Побудова квадрата з двох трикутників (<code>gl.TRIANGLES</code>) та організація безперервного обертання за допомогою матриць трансформації й <code>requestAnimationFrame</code>.</li>
             <li><strong>Завдання 4:</strong> Побудова складної довільної фігури (шестикутної зірки) в режимі <code>gl.TRIANGLE_FAN</code> та її вертикальна анімація.</li>
+        </ul>
+
+        <hr style="margin: 25px 0; border: none; border-top: 1px solid #e2e8f0;">
+
+        <h3>Лабораторна робота №2: «Робота з пристроями введення та організація взаємодії з користувачем»</h3>
+        <p>Для перегляду інтерактивних програм наведіть курсор на пункт меню <strong>«Лаб 2 ▼»</strong>:</p>
+        <ul style="text-align: left; display: inline-block;">
+            <li><strong>Завдання 1:</strong> Створення точок кліком миші з точним коригуванням координат через <code>getBoundingClientRect()</code>.</li>
+            <li><strong>Завдання 2:</strong> Кнопка очищення полотна, інтерактивний вибір кольору фону та кольору створюваних точок.</li>
+            <li><strong>Завдання 3:</strong> Перемикання режимів «Точки» та «Трикутники» з оптимізованим пакетним рендерингом (мінімум викликів <code>gl.drawArrays</code>).</li>
+            <li><strong>Завдання 4:</strong> Повнофункціональний графічний редактор: додано режим побудови кіл через <code>gl.TRIANGLE_FAN</code> (визначення центру та радіуса двома кліками миші).</li>
         </ul>
     </div>
 </body>
